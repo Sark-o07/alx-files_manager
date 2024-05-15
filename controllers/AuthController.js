@@ -11,7 +11,7 @@ class AuthController {
     userData = buff.toString('ascii');
     userData = userData.split(':');
     if (userData.length !== 2) {
-      response.status(401).json({ error: 'Unauthorized1' });
+      response.status(401).json({ error: 'Unauthorized' });
       return;
     }
 
